@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    margin-bottom: 27px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-instrument,
+.price,
+.title,
+.title-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.buy-instrument {
+    margin: 0 auto;
+    max-width: 202px;
+    padding: 24px 75px;
+    border-color: rgba(35, 186, 193, 1);
+    border-width: 1px;
+    border-style: solid;
+    background-color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #23BAC1;
+}
+
+.price {
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.title {
+    margin-bottom: 22px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000000;
+}
+
+.title-container {
+    margin-top: 0;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 121px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}

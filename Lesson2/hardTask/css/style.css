@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-book {
+    max-width: 1200px;
+    margin: 77px auto 94px auto;
+    display: flex;
+}
+
+.container-text {
+    margin-left: 75px;
+    margin-top: 60px;
+    margin-bottom: 94px;
+}
+
+.title-book,
+.title-author-book,
+.book-description,
+.price {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.title-book {
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+}
+
+.title-author-book {
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+.book-description {
+    margin-bottom: 47px;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+.price {
+    margin-bottom: 51px;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    color: #313131;
+}
+
+.button-buy {
+    background: rgba(240, 90, 34, 1);
+    padding: 24px 45px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    color: #FFFFFF;
+    border: none;
+}
+
+.button-about-book {
+    margin-left: 37px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    border-color: rgba(240, 90, 34, 1);
+    border-width: 2px;
+    border-style: solid;
+    padding: 22.5px 32px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: #F05A22;
+    background-color: #fff;
+}
+
+.button-about-book:hover {
+    color: #FFFFFF;
+    background: rgba(240, 90, 34, 1);
+}
+
+.button-buy:hover {
+    color: #F05A22;
+    background-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.container-dilivery {
+    margin: 0 auto;
+    background-color: rgba(246, 246, 246);
+    border-color: rgba(255, 255, 255, 1);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.title-dilivery {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: #333333;
+    margin-top: 91px;
+    margin-bottom: 89px;
+}
+
+.container-cards {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 101px;
+}
+
+.card-description {
+    margin-top: 25px;
+    max-width: 242px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #333333;
+}
+
+.container-bought {
+    margin: 0 auto;
+}
+
+.title-bought {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: #333333;
+    margin-top: 87px;
+    margin-bottom: 70px;
+}
+
+.container-photos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+.photo {
+    margin: 18px;
+}
