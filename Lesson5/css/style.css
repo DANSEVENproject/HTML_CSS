@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "helvetica neue";
+    src: url("/HTML_CSS/Lesson3/fonts/HelveticaNeueCyr-Thin.ttf");
+}
+
+.head {
+    padding-top: 76px;
+    padding-bottom: 191px;
+    background-color: rgb(243, 243, 243);
+}
+
+.head .container-about {
+    margin-top: 167px;
+}
+
+.contacts>a {
+    margin-right: 20px;
+}
+
+.author>span {
+    font-family: "helvetica neue";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    font-style: normal;
+    text-align: left;
+    color: #95989a;
+}
+
+.subtitle {
+    font-family: "helvetica neue";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    text-align: left;
+    color: #32325f;
+    margin-bottom: 27px;
+}
+
+.title {
+    font-family: "helvetica neue";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    font-style: normal;
+    text-align: left;
+    color: #32325f;
+    margin-bottom: 26px;
+}
+
+.description {
+    margin-bottom: 16px;
+    max-width: 517px;
+}
+
+.price-tag {
+    margin-bottom: 10px;
+}
+
+.about-book>img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.description,
+.price-tag {
+    font-family: "helvetica neue";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    text-align: left;
+    color: #32325f;
+}
+
+.price {
+    margin-bottom: 49px;
+    font-family: "helvetica neue";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    font-style: normal;
+    text-align: left;
+    color: #525f7f;
+}
+
+.offer,
+.listen {
+    font-family: "helvetica neue";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 23px 35px;
+}
+
+.offer {
+    border-radius: 6px;
+    filter: drop-shadow(0px 3px 3px rgba(173, 173, 173, 0.16));
+    background: #2dce89;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.listen {
+    border-radius: 6px;
+    filter: drop-shadow(0px 3px 3px rgba(173, 173, 173, 0.16));
+    background: #5e72e4;
+    border: none;
+}
+
+.card {
+    max-width: 235px;
+    border: none;
+}
+
+.way-freelance {
+    padding-top: 94px;
+    padding-bottom: 131px;
+}
+
+.way-freelance__container-titles>span {
+    margin-bottom: 30px;
+    font-family: "helvetica neue";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    text-align: left;
+    color: #32325f;
+}
+
+.way-freelance__container-titles>h1 {
+    font-family: "helvetica neue";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    font-style: normal;
+    text-align: left;
+    color: #32325f;
+    margin-bottom: 100px;
+}
+
+.way-freelance__description {
+    font-family: "helvetica neue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    font-style: normal;
+    text-align: left;
+    color: #525f7f;
+}
+
+.way-order {
+    padding-top: 94px;
+    padding-bottom: 112px;
+    background-color: rgb(243, 243, 243);
+}
+
+.way-order__container-titles>span {
+    margin-bottom: 30px;
+    font-family: "helvetica neue";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    text-align: left;
+    color: #32325f;
+}
+
+.way-order__container-titles>h1 {
+    font-family: "helvetica neue";
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    font-style: normal;
+    text-align: left;
+    color: #32325f;
+    margin-bottom: 100px;
+}
+
+.way-order__container-photos>img {
+    margin-bottom: 30px;
+}
+
+.contacts__about {
+    background: #32325f;
+}
+
+.contacts__about>div {
+    padding-top: 84px;
+    padding-bottom: 104px;
+}
+
+.contacts__about-card>strong {
+    font-family: "helvetica neue";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.contacts__about-card>div {
+    max-width: 252px;
+    margin-top: 40px;
+    font-family: "helvetica neue";
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    font-style: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+@media (max-width: 576px) {
+    .contacts__about-card>div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .photo>img {
+        height: 240px;
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo>img {
+        height: 254px;
+        width: 362px;
+    }
+}
+
+@media (max-width: 400px) {
+    .photo>img {
+        height: 240px;
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-book>img {
+        display: none;
+    }
+}
