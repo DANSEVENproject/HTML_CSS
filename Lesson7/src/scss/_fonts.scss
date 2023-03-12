@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl 700';
+    src: url('/Lesson7/src/fonts/MuseoSansCyrl700.ttf');
+    src: url('/Lesson7/src/fonts/MuseoSansCyrl700.woff') format(woff), url('/Lesson7/src/fonts/MuseoSansCyrl700.eot') format(eot);
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl 300';
+    src: url('/Lesson7/src/fonts/MuseoSansCyrl300.ttf');
+    src: url('/Lesson7/src/fonts/MuseoSansCyrl300.woff') format(woff), url('/Lesson7/src/fonts/MuseoSansCyrl300.eot') format(eot);
+}
+
+@mixin bold-text {
+    font-family: 'Museo Sans Cyrl 700';
+    font-weight: 700;
+}
+
+@mixin common-text {
+    font-family: 'Museo Sans Cyrl 300';
+    font-weight: 300;
+}

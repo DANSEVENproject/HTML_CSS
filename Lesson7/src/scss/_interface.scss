@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+@mixin text-style {
+    font-style: normal;
+    color: $text-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1250px) {
+    .container {
+        max-width: 96%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 85%;
+    }
+}
+
+.button {
+    padding: 18px 30px;
+    background: $button-color;
+    border: none;
+    border-radius: 10px;
+    @include bold-text;
+    @include text-style;
+}
+
+.title {
+    @include bold-text;
+    @include text-style;
+}
+
+.description {
+    @include common-text;
+    @include text-style;
+}
+
+.input {
+    @include common-text;
+    @include text-style;
+}

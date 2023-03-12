@@ -1,0 +1,146 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 84px;
+    padding-bottom: 91px;
+    width: 50%;
+    max-width: 500px;
+    &_background {
+        background: url('/Lesson7/src/images/form-image.png') no-repeat;
+        background-size: 50% 100%;
+        background-position: center right;
+    }
+    &__title {
+        font-size: 24px;
+        text-align: left;
+        max-width: 350px;
+        margin-bottom: 24px;
+    }
+    &__description {
+        margin-bottom: 29px;
+        max-width: 235px;
+        font-size: 16px;
+        text-align: left;
+    }
+    &__form {
+        padding-right: 15px;
+        &_inputs {
+            display: flex;
+            justify-content: space-between;
+            input {
+                margin-bottom: 30px;
+                width: 200px;
+                height: 66px;
+                border: rgba(221, 221, 221, 1) 1px solid;
+                border-radius: 15px;
+                padding-left: 26px;
+                font-size: 15px;
+                text-align: left;
+            }
+        }
+        &_button {
+            padding-top: 27px;
+            padding-bottom: 27px;
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 33px;
+        }
+    }
+    &__block {
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        &_text {
+            max-width: 230px;
+            font-size: 15px;
+            text-align: left;
+            line-height: 25px;
+            margin-right: 10px;
+        }
+        &_number {
+            max-width: 230px;
+            font-size: 15px;
+            text-align: left;
+            line-height: 25px;
+            &::after {
+                content: '+7 (495) 42-251-31';
+                display: block;
+                @include bold-text;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .offer {
+        &__form {
+            input {
+                width: 180px;
+                padding-left: 13px;
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .offer {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        &_background {
+            background: #fff;
+        }
+        &__title {
+            max-width: 100%;
+            text-align: center;
+            width: 100%;
+        }
+        &__description {
+            text-align: center;
+            max-width: 100%;
+        }
+        &__form {
+            width: 100%;
+            padding-right: 0px;
+            &_inputs {
+                display: block;
+                padding-right: 17px;
+                input {
+                    width: 100%;
+                }
+                &:first-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .offer {
+        width: 100%;
+        display: block;
+        &_text {
+            margin-bottom: 18px;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__description {
+            margin-bottom: 26px;
+        }
+        &__form {
+            &_inputs {
+                input {
+                    margin-bottom: 7px;
+                }
+            }
+            &_button {
+                font-size: 14px;
+            }
+        }
+    }
+}
