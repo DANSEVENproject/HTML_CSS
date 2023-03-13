@@ -61,6 +61,10 @@ a {
   font-style: normal;
   color: #333333;
 }
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 222, 75);
+}
 
 .title {
   font-family: "Museo Sans Cyrl 700";
@@ -302,6 +306,10 @@ a {
   padding-left: 26px;
   font-size: 15px;
   text-align: left;
+  outline: none;
+}
+.offer__form_inputs input:focus {
+  border: rgb(255, 210, 0) 1px solid;
 }
 .offer__form_button {
   padding-top: 27px;
@@ -397,4 +405,30 @@ a {
   .offer__form_button {
     font-size: 14px;
   }
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal_active {
+  display: flex;
+}
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: 450px;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */

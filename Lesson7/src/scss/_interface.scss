@@ -56,6 +56,10 @@ a {
     border-radius: 10px;
     @include bold-text;
     @include text-style;
+    &:hover {
+        cursor: pointer;
+        background-color: $button-color-hover;
+    }
 }
 
 .title {
