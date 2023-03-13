@@ -8,6 +8,7 @@
     <link href="https://fonts.cdnfonts.com/css/museo-sans-cyrl" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
     <title>Lesson7</title>
 </head>
 
@@ -88,6 +89,40 @@
         </div>
     </section>
 
+    <section class="portfolio_background_first">
+        <div class="portfolio_background_second">
+            <div class="container portfolio">
+                <div class="title portfolio__title">Работая с 2007 года, <br/> мы сделали более 500 ремонтов в квартирах и домах</div>
+                <div class="portfolio__slider-wrapper">
+                    <div class="portfolio__slider">
+                        <div class="slide">
+                            <img class="slide_image" src="images/room-1.png" alt="Пример квартиры">
+                        </div>
+                        <div class="slide">
+                            <img class="slide_image" src="images/room-2.png" alt="Пример квартиры">
+                        </div>
+                        <div class="slide">
+                            <img class="slide_image" src="images/room-3.png" alt="Пример квартиры">
+                        </div>
+                        <div class="slide">
+                            <img class="slide_image" src="images/room-1.png" alt="Пример квартиры">
+                        </div>
+                        <div class="slide">
+                            <img class="slide_image" src="images/room-2.png" alt="Пример квартиры">
+                        </div>
+                        <div class="slide">
+                            <img class="slide_image" src="images/room-3.png" alt="Пример квартиры">
+                        </div>
+                    </div>
+                    <div class="portfolio__slider_arrows">
+                        <img class="portfolio__slider_arrows_left" src="images/left-arrow.svg" alt="Стрелка влево">
+                        <img class="portfolio__slider_arrows_right" src="images/left-arrow.svg" alt="Стрелка вправо">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="modal">
         <div class="modal-dialog">
             <button class="modal-dialog__close">&times;</button>
@@ -96,6 +131,34 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.portfolio__slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: $('.portfolio__slider_arrows_left'),
+                nextArrow: $('.portfolio__slider_arrows_right'),
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+        });
+    </script>
 </body>
 
 </html>

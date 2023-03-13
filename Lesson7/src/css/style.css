@@ -431,4 +431,36 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.portfolio {
+  padding: 100px 0px;
+}
+.portfolio_background_first {
+  background-color: rgb(245, 245, 245);
+}
+.portfolio_background_second {
+  background: url("/Lesson7/src/images/portfolio-background.png") no-repeat;
+  background-size: 50% 100%;
+  background-position: center left;
+}
+.portfolio__title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 107px;
+}
+.portfolio__slider .slide_image {
+  margin: auto;
+}
+.portfolio__slider_arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 67px;
+}
+.portfolio__slider_arrows_right {
+  margin-left: 30px;
+  transform: rotate(180deg);
+}
+.portfolio__slider_arrows_left, .portfolio__slider_arrows_right {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

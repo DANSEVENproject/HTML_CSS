@@ -1,0 +1,36 @@
+.portfolio {
+    padding: 100px 0px;
+    &_background {
+        &_first {
+            background-color: rgba(245, 245, 245, 1);
+        }
+        &_second {
+            background: url('/Lesson7/src/images/portfolio-background.png') no-repeat;
+            background-size: 50% 100%;
+            background-position: center left;
+        }
+    }
+    &__title {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 107px;
+    }
+    &__slider {
+        .slide_image {
+            margin: auto;
+        }
+        &_arrows {
+            display: flex;
+            justify-content: center;
+            margin-top: 67px;
+            &_right {
+                margin-left: 30px;
+                transform: rotate(180deg);
+            }
+            &_left,
+            &_right {
+                cursor: pointer;
+            }
+        }
+    }
+}
